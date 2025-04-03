@@ -1,0 +1,89 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-image: url("/for\ images/log.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    color: #8B5E3B;
+}
+.main{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.main>i{
+    font-size: 30px;
+    height: 70px;
+    width: 70px;
+    color:rgb(111, 221, 111);
+    margin-top: 40px;
+    cursor: pointer;
+    /* for checking whether the button is working or not */
+    &:active{
+        color: rgb(86, 223, 86);
+    }
+}
+.login-page{
+    border: none;
+    color: #8B5E3B;
+    background-color: #F5E1C8;
+    margin: 50px 0 0 500px;
+    padding: 50px;
+    width: 30%;
+    border-radius: 10px;
+    height: 520px;
+    box-shadow: 5px 5px 5px black;
+}
+.login-page>h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: "Lilita One", sans-serif;
+}
+    
+.login-page>.name{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    margin-left: 10px;
+}
+input{
+    border: 1px solid black;
+    color: #8B5E3B;
+    width: 90%;
+    padding: 10px;
+    margin:10px 0 0 10px;
+    border-radius: 5px;
+}
+#iconone{
+    color: #8B5E3B;
+    margin:20px 0 0 -30px;
+    cursor: pointer;
+}
+#iconone:active{
+    color: red;
+}
+.on{
+    display: flex;
+}
+#butt{
+    margin-top: 60px;
+    margin-left: 20px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    border: none;
+    box-shadow: 2px 2px 2px black;
+    background-color: rgb(230, 184, 124);
+    &:hover{
+        box-shadow: 5px 5px 5px black;
+    }
+    &:active{
+        color:blue;
+    }
+}

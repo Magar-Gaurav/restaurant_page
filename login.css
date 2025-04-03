@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    background: url("./for\ images/order.png") center/cover no-repeat fixed;
+}
+
+.login-page{
+    border: none;
+    color: #8B5E3B;
+    background-color: #F5E1C8;
+    margin: 50px 0 0 500px;
+    padding: 50px;
+    width: 30%;
+    border-radius: 10px;
+    height: 520px;
+    box-shadow: 5px 5px 5px black;
+}
+.login-page>h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: "Lilita One", sans-serif;
+}
+    
+.login-page>.name{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    margin-left: 10px;
+}
+input{
+    border: none;
+    color: #8B5E3B;
+    width: 90%;
+    padding: 10px;
+    margin:10px 0 0 10px;
+    border-radius: 5px;
+    &:active{
+        border: 0.5px solid black;
+    }
+}
+i{
+    color: #8B5E3B;
+    margin:20px 0 0 -30px;
+    cursor: pointer;
+}
+i:active{
+    color: red;
+}
+.on{
+    display: flex;
+}
+button{
+    border: none;
+    color: #8B5E3B;
+    height: 40px;
+    width: 90%;
+    margin: 40px 0 0 20px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    &:active{
+        background-color: green;
+        color: white;
+    }
+}
+#butt{
+    margin-left: 40px;
+    width: 85%;
+    border: none;
+    &:active{
+        border: none;
+        outline: none;
+        background-color: green;
+        color: white;
+    }
+}
+h3{
+    text-align: center;
+
+    &:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    &:active{
+        color:red;
+    }
+}
+.other-option{
+    display: flex;
+    align-items: center;
+}
+.other-option>hr{
+    opacity: 0.5;
+    width: 30%;
+}
+.no{
+    margin-top: 30px;
+    &:active{
+    background-color: red;
+    }
+}

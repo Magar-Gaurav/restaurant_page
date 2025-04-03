@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden3;
+    background-image: url(/for\ images/order.png);
+}
+.paypage{
+    display: flex;
+    background-color: #F5E1C8;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0 0 35%;
+    box-shadow: 3px 3px 3px black;
+    width: 500px;
+    border-radius: 10px;
+}
+h1{
+    text-decoration: underline;
+}
+img{
+    height: 50px;
+    width: 80%;
+    border-radius: 10px;
+    mix-blend-mode: multiply;
+    margin-left: 40px;
+    &:hover{
+        box-shadow: 3px 3px black;
+        content: "hello";
+    }
+}
+.payment-methods{
+    display: flex;
+    margin-top: 50px;
+    margin-left: -50px;
+}
+
+.breaker{
+    margin: 30px;
+}

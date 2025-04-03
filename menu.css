@@ -1,0 +1,271 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#FFF8E1;
+    cursor: pointer;
+    font-weight:700;
+}
+.header{
+    display: flex;
+    background-color: #52c956;
+    overflow: hidden;
+    padding: 30px;
+}
+.left-header>h1{
+    /* margin: 30px; */
+    font-family: "Gloria Hallelujah", cursive;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    color: #faf6f6;
+    text-shadow: 2px 2px 2px black;
+}
+.center-header{
+    display: flex;
+    justify-items: center;
+    height: 50px;
+    border-radius: 10px;
+    margin-left: 10%;
+}
+.center-header:hover{
+    box-shadow: 2px 2px 5px blue;
+}
+.center-header>input{
+    margin-right: 500px;
+    height: 50px;
+    padding-left:20px;
+    width:500px;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    margin-right: 0;
+    outline: none;
+}
+.center-header>input:active{
+    background-color:#F8D0B8;
+}
+.center-header>button{
+    color: #8B5E3B;
+    height: 50px;
+    width: 50px;
+    margin-left: 0;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+    background-color:  #F9E98D;
+}
+.center-header>button:active{
+    background-color: red;
+}
+.right-header>ul{
+    display: flex;
+}
+.right-header>ul>li{
+    font-size: 22px;
+    padding-top: 10px;
+    margin-left: 45px;
+    color: #f1e9e9;
+    &:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+h2{
+    margin-bottom: 400px;
+}
+/* code for menu section */
+.menu-options>h1{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+    text-underline-offset : 20px;
+    transition: text-underline-offset  0.2s ease-in-out;
+    margin-bottom: 100px;
+}
+
+.menu-options>h1:hover{
+    cursor: pointer;
+    text-underline-offset:10px;
+}
+.menu-options>h2{
+    text-align: center;
+    margin: 30px;
+    font-size: 40px;
+    text-decoration:underline;
+}
+.meanu{
+    text-align: center;
+}
+img{
+    width:350px;
+    max-height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+    &:hover{
+        transform: translateY(-5px) scale(1.05);/* Slight zoom */
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    }
+}
+.menu1 {
+    position: relative;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 0 40px 0;
+    width:100%;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+.menu1 .menu1a {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu1 .name {
+    font-size: 18px;
+}
+
+.menu1 .price {
+    font-size: 18px;
+}
+
+.menu1:hover {
+    box-shadow: 5px 5px 5px black;
+    cursor: pointer;
+}
+
+.menu1:hover .menu1a {
+    opacity: 1;
+}
+
+.veg-menu{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Exactly 3 columns */
+    gap:60px; /* Consistent spacing */
+    justify-items: center; /* Center images in grid cells */
+    align-items: center; /* Align items vertically */
+    width: 80%; /* Control grid width */
+    margin: 0 auto; /* Center the whole grid */
+    padding-bottom: 100px;
+}
+.veg-menu img {
+    width: 350px;  /* Fixed width */
+    height: 300px; /* Fixed height */
+    object-fit: cover; /* Ensures consistent sizing */
+    display: block; /* Prevents inline spacing issues */
+}
+.chicken-menu{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Exactly 3 columns */
+    gap: 70px; /* Consistent spacing */
+    justify-items: center; /* Center images in grid cells */
+    align-items: center; /* Align items vertically */
+    width: 80%; /* Control grid width */
+    margin: 0 auto; /* Center the whole grid */
+    padding-bottom: 100px;
+}
+.chicken-menu img {
+    width: 350px;  /* Fixed width */
+    height: 300px; /* Fixed height */
+    object-fit: cover; /* Ensures consistent sizing */
+    display: block; /* Prevents inline spacing issues */
+}
+.buff-menu{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Exactly 3 columns */
+    gap: 70px; /* Consistent spacing */
+    justify-items: center; /* Center images in grid cells */
+    align-items: center; /* Align items vertically */
+    width: 80%; /* Control grid width */
+    margin: 0 auto; /* Center the whole grid */
+    padding-bottom: 100px;
+}
+.buff-menu img {
+    width: 350px;  /* Fixed width */
+    height: 300px; /* Fixed height */
+    object-fit: cover; /* Ensures consistent sizing */
+    display: block; /* Prevents inline spacing issues */
+}
+.breaker{
+    margin:50px 0 50px 0;
+}
+footer{
+    height:160px;
+    background-color: #A3E635;
+}
+footer>h4{
+    margin-left: 6%;
+    font-size: 40px;
+}
+footer>p{
+   padding-top: 40px;
+   text-align: center;
+   font-size: 23px;
+   font-weight: 500;
+}
+.butt{
+    padding: 10px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    background-color: #A5D96D ;
+    box-shadow: 3px 3px 3px black;
+}
+.butt:hover{
+    background-color: #88C24B;
+    box-shadow: 5px 5px 5px black;
+}
+#upBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    background-color: #28a745; /* Green color */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+    transition: 0.3s;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#upBtn:hover {
+    background-color: #218838; /* Darker green */
+}
+.ico{
+    display: flex;
+    float: left;
+    margin-left: 50px;
+    font-size: 30px;
+}
+.ico>a{
+    margin-left: 50px;
+    &:hover{
+    text-shadow: 1px 1px 1px rgb(108, 98, 98);
+    }
+}
+@media (max-width: 768px) {
+    .veg-menu,.chicken-menu,.buff-menu {
+        grid-template-columns: repeat(2, 1fr); /* 2 images per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .veg-menu,.chicken-menu,.buff-menu{
+        grid-template-columns: 1fr; /* 1 image per row */
+    }
+}

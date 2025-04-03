@@ -1,0 +1,273 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #B2E0A4;
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* css code for breaker */
+.breaker{
+    margin: 50px 0;
+}
+/* css code for header */
+header{
+    color:  #e2d5d5 ;
+    padding: 20px 0 0 50px;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background-color: #3D834A;
+}
+header>.left-header{
+    font-family: "Gloria Hallelujah", cursive;
+    font-weight: 700;
+    font-size: 22px;
+    margin-top: -50px;
+    color: #e2d5d5;
+    text-shadow: 2px 2px 2px black;
+}
+header>.center-header>button>i{
+    
+}
+header>.right-header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: -30px;
+    margin-right: 40px;
+}
+header>.right-header>a{
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 50px;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: all ease 0.5s;
+    z-index:1;
+    height: 30px;
+    color: #f1e9e9;
+    box-shadow: 1px 1px 3px white;
+}
+header>.right-header>a:hover{
+    color:#f1e9e9;
+    box-shadow: 5px 5px 5px white;
+}
+header>.right-header>a::after{
+    /* background-color:rgb(118, 118, 207); */
+    content:"";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    transition: all ease 0.5s;
+    bottom: -100%;
+    z-index: -1;
+}
+header>.right-header>a:hover::after{
+    bottom: 0;
+    border-radius: 0;
+}
+header>.right-header>a>i{
+    margin-top: 4px;
+    padding-right: 10px;
+}
+
+header>.right-header>a>p{
+    margin-top: 2px;
+}
+/* used hero as a div because the menu-options wasnot placing properly */
+.hero{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+    margin-top: -50px;
+}
+/* code for hero-section */
+.her-sec{
+    display: flex;
+    margin-left: 100px;
+}
+.her-sec>.hero-section-one>img{
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+}
+.hero-section{
+    top: 0;
+    padding: 50px 0;
+    margin-bottom: 50px;
+    float: right;
+    background-image: url(https://media.istockphoto.com/id/1487704378/photo/girl-with-chopsticks-eating-delicious-traditional-chinese-delicacy-xiaolongbao-dumplings-or.jpg?s=2048x2048&w=is&k=20&c=52fvmrOxBEqSiVZ7MfdQg23lRHJsl0QKggrUyI1H7Hw=);
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    text-align: justify;
+    color: white;
+}
+.hero-section>h1{
+    margin-right: 50px;
+    font-size: 50px;
+    display: flex;
+    justify-content:end;
+    text-shadow: 5px 5px 5px black;
+}
+.hero-section>.hero-section1{
+    display: flex;
+    justify-content: end;
+    margin-right: 50px;
+    font-size: 20px;
+}
+.hero-section>.hero-section1>svg{
+    height: 70px;
+    width: 40px;
+    margin-right: 10px;
+}
+.hero-section>.hero-section1>h1{
+    font-size: 30px;
+}
+/* services */
+.services{
+    display:flex;
+    flex-direction: column;
+    justify-items:center;
+    align-items:center ;
+}
+.services>h1{
+    font-size: 40px;
+    text-decoration: underline;
+    text-underline-offset : 20px;
+    transition: text-underline-offset  0.2s ease-in-out;
+    margin-bottom: 100px;
+    &:hover{
+        text-underline-offset:10px;
+    }
+}
+.services>.services-more{
+    display: flex;
+}
+.services>.services-more>.services-more1{
+    background-color:#E1F5FE;
+    border: none;
+    box-shadow: 3px 3px 3px #182126;
+    border-radius: 10px;
+    margin-left: 100px;
+    padding: 10px;
+}
+.services>.services-more>.services-more1:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 5px #182126;
+}
+.services>.services-more>.services-more1>.services-more1a{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+.services>.services-more>.services-more1>.services-more1a>i{
+    color: #4B9F4B;
+    font-size: 30px;
+}
+.services>.services-more>.services-more1>.services-more1a>svg{
+    font-size: 400px;
+}
+/* code for footer or contact */
+footer{
+    padding-top: 0;
+    height: 430px;
+    cursor: pointer;
+    color: #2c2c2c;
+    background-color: #3D834A;
+    padding-bottom:50px;
+}
+.icon>h4{
+    font-size: 30px;
+    margin-left: 5%;
+}
+.ico{
+    display: flex;
+    float: left;
+    margin-left: 50px;
+    font-size: 30px;
+}
+.ico>a{
+    margin-left: 50px;
+    &:hover{
+    text-shadow: 1px 1px 1px rgb(108, 98, 98);
+    }
+}
+footer>h1{
+    font-family: "Gloria Hallelujah", cursive;
+    font-weight: 700;
+    text-align: center;
+    font-size: 40px;
+    color: #FFAB40;
+}
+footer>h2{
+    height: 50px;
+    text-align: center;
+}
+footer>.footer1{
+    display: flex;
+    margin-left: 20%;
+    margin-top: 50px;
+}
+footer>.footer1>.footer1a>h3{
+    font-size: 30px;
+}
+footer>.footer1>.footer1a>a{
+    text-decoration: none;
+}
+footer>.footer1>.footer1b>h3{
+    font-size: 30px;
+}
+footer>.footer1>.footer1b{
+    margin-left: 100px;
+}
+footer>.footer1>.cont{
+    font-size: 20px;
+    margin-left: 30%;
+    line-height: 2;
+}
+footer>.footer1>.cont>ul{
+    list-style: none;
+}
+footer>.footer1>.cont>ul>li>a{
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+footer>.footer1>.cont>ul>li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+footer>.footer2{
+    margin-left: 20%;
+    margin-top: -130px;
+}
+footer>.footer2>h3{
+    font-size: 30px;
+}
+footer>.footer2>a{
+    color: #2c2c2c;
+    text-decoration: none;
+}
+footer>.footer2>a:active{
+    text-decoration:none ;
+}
+#sixth>li>a{
+    color: #2c2c2c;
+}
+.services-more1>img{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+.services-more1>p{
+    text-align: center;
+}

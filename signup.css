@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    background: url("./for\ images/order.png") center/cover no-repeat fixed;
+}
+form{
+    margin-top: 30px;
+}
+.sign-up{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    color: #8B5E3B;
+    background-color: #F5E1C8;
+    margin: 50px 0 0 500px;
+    padding: 40px;
+    width: 30%;
+    border-radius: 10px;
+    height: 460px;
+    box-shadow: 5px 5px 5px black;
+    line-height: 1.5;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: "Lilita One", sans-serif;
+}
+img{
+    margin-top: -20px;
+    margin-left: 95%;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    &:active{
+        box-shadow: 5px 5px 5px black;
+    }
+}
+label{
+    margin-left: 10px;
+}
+input{
+    border: none;
+    color: #8B5E3B;
+    width: 90%;
+    padding: 10px;
+    margin:10px 0 0 10px;
+    border-radius: 5px;
+    &:active{
+        border: 0.5px solid black;
+    }
+}
+i{
+    color: #8B5E3B;
+    margin:20px 0 0 -30px;
+    cursor: pointer;
+}
+i:active{
+    color: red;
+}
+.on{
+    display: flex;
+}
+button{
+    position: fixed;
+    margin-top: 40px;
+    margin-left: 30px;
+    /* bottom: 12%; */
+    border: none;
+    color: #8B5E3B;
+    height: 40px;
+    width: 25%;
+    cursor: pointer;
+    border-radius: 5px;
+    &:active{
+        background-color: green;
+        color: white;
+    }
+}
+.pass>span{
+    margin-top: 10px;
+    display: none;
+    text-align: center;
+    color: red;
+}
+
+/*Printing all the errors */
+/* Error message container */
+.error-main {
+    background-color: #f44336; /* Red background */
+    color: white; /* White text */
+    border: 1px solid #d32f2f; /* Darker red border */
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px; /* Rounded corners */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+/* Style for the icon inside the error box */
+.error-main i {
+    margin-right: 10px;
+    font-size: 18px; /* Icon size */
+}
+
+/* Style for the error message text */
+.error-main p {
+    margin: 0;
+    flex-grow: 1;
+}
+
+/* Optional: Hover effect to make the box interactive */
+.error-main:hover {
+    background-color: #e53935; /* Darker red on hover */
+    cursor: pointer;
+}
+
